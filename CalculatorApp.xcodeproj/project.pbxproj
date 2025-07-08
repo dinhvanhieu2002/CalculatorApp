@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0438F8942E1CF2D500B09446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8932E1CF2D500B09446 /* AppDelegate.swift */; };
 		0438F8962E1CF2D500B09446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8952E1CF2D500B09446 /* SceneDelegate.swift */; };
-		0438F8982E1CF2D500B09446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8972E1CF2D500B09446 /* ViewController.swift */; };
 		0438F89B2E1CF2D500B09446 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0438F89A2E1CF2D500B09446 /* Base */; };
 		0438F89D2E1CF2D600B09446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0438F89C2E1CF2D600B09446 /* Assets.xcassets */; };
 		0438F8A02E1CF2D600B09446 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0438F89F2E1CF2D600B09446 /* Base */; };
 		0438F8AB2E1CF2D700B09446 /* CalculatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8AA2E1CF2D700B09446 /* CalculatorAppTests.swift */; };
 		0438F8B52E1CF2D700B09446 /* CalculatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8B42E1CF2D700B09446 /* CalculatorAppUITests.swift */; };
 		0438F8B72E1CF2D700B09446 /* CalculatorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8B62E1CF2D700B09446 /* CalculatorAppUITestsLaunchTests.swift */; };
+		0438F8C82E1CF53800B09446 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8C62E1CF53800B09446 /* CalculatorLogic.swift */; };
+		0438F8CB2E1CF53E00B09446 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8C92E1CF53E00B09446 /* CustomButton.swift */; };
+		0438F8CD2E1CFF0500B09446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438F8CC2E1CFF0500B09446 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		0438F8902E1CF2D500B09446 /* CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0438F8932E1CF2D500B09446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0438F8952E1CF2D500B09446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0438F8972E1CF2D500B09446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0438F89A2E1CF2D500B09446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0438F89C2E1CF2D600B09446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0438F89F2E1CF2D600B09446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		0438F8B02E1CF2D700B09446 /* CalculatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0438F8B42E1CF2D700B09446 /* CalculatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppUITests.swift; sourceTree = "<group>"; };
 		0438F8B62E1CF2D700B09446 /* CalculatorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0438F8C62E1CF53800B09446 /* CalculatorLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
+		0438F8C92E1CF53E00B09446 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0438F8CC2E1CFF0500B09446 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		0438F8922E1CF2D500B09446 /* CalculatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				0438F8CA2E1CF53E00B09446 /* Views */,
+				0438F8C72E1CF53800B09446 /* Model */,
+				0438F8C42E1CF53100B09446 /* Controller */,
 				0438F8932E1CF2D500B09446 /* AppDelegate.swift */,
 				0438F8952E1CF2D500B09446 /* SceneDelegate.swift */,
-				0438F8972E1CF2D500B09446 /* ViewController.swift */,
 				0438F8992E1CF2D500B09446 /* Main.storyboard */,
 				0438F89C2E1CF2D600B09446 /* Assets.xcassets */,
 				0438F89E2E1CF2D600B09446 /* LaunchScreen.storyboard */,
@@ -125,6 +131,30 @@
 				0438F8B62E1CF2D700B09446 /* CalculatorAppUITestsLaunchTests.swift */,
 			);
 			path = CalculatorAppUITests;
+			sourceTree = "<group>";
+		};
+		0438F8C42E1CF53100B09446 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0438F8CC2E1CFF0500B09446 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0438F8C72E1CF53800B09446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0438F8C62E1CF53800B09446 /* CalculatorLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0438F8CA2E1CF53E00B09446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0438F8C92E1CF53E00B09446 /* CustomButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0438F8982E1CF2D500B09446 /* ViewController.swift in Sources */,
+				0438F8CD2E1CFF0500B09446 /* ViewController.swift in Sources */,
 				0438F8942E1CF2D500B09446 /* AppDelegate.swift in Sources */,
+				0438F8CB2E1CF53E00B09446 /* CustomButton.swift in Sources */,
+				0438F8C82E1CF53800B09446 /* CalculatorLogic.swift in Sources */,
 				0438F8962E1CF2D500B09446 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
